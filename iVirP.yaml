@@ -1,0 +1,28 @@
+name: ivirp
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python = 3.8
+  - fastqc
+  - trimmomatic
+  - bowtie2
+  - samtools
+  - pysam
+  - diamond
+  - vsearch
+  - blast
+  - spades
+  - checkv
+  - biopython 
+  - ruamel.yaml
+  - snakemake-minimal = 7.25
+  - pandas
+  - click
+  - git
+  - cookiecutter
+  - mamba
+  - kraken2
+  - bracken
+  - krakentools
