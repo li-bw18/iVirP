@@ -6,7 +6,7 @@ from utils import *
 
 
 def parameter_input():
-    parser = argparse.ArgumentParser(description='Integrative viral detection pipeline - QC')
+    parser = argparse.ArgumentParser(description='Integrative virome pipeline - QC')
     parser.add_argument('input1', help='Path to the fastq(.gz) file of read1')
     parser.add_argument('input2', help='Path to the fastq(.gz) file of read2')
     parser.add_argument('--host', help='Name(s) of Bowtie2 index(es) built before, please separate different names with "," when removing more than one hosts (for example: "human,mouse") (default: None, which means this step will be skipped)', default=None)

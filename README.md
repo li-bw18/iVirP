@@ -1,4 +1,4 @@
-# iVirP (Integrative viral detection pipeline) #
+# iVirP (Integrative virome pipeline) #
  
 ## Description ##
 

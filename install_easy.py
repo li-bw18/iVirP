@@ -6,7 +6,7 @@ import sys
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Install script for integrative viral detection pipeline')
+    parser = argparse.ArgumentParser(description='Install script for integrative virome pipeline')
     parser.add_argument('-t', '--threads', type=int, help='Threads used to run this install script', default=1)
     args = parser.parse_args()
     his = 0
