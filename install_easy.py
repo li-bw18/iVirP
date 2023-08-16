@@ -56,7 +56,7 @@ if __name__ == '__main__':
         with open("install_history.txt", "w") as f:
             f.write(f"{his}\n")
     if his < 6:
-        ret = subprocess.call(["wget -c https://zenodo.org/record/7700466/files/data.tar.gz"], shell=True)
+        ret = subprocess.call(["wget -c https://zenodo.org/record/7821093/files/data.tar.gz"], shell=True)
         if ret != 0:
             sys.exit("install error")
         his = 6
