@@ -51,9 +51,9 @@ def filter_vircontig(output):
         for i in range(len(crass)):
             if crass.iloc[i, 0] not in blastn:
                 blastn.append(crass.iloc[i, 0])
-    crass = crass.iloc[:, :5]
-    crass['database'] = ['crass'] * len(crass)
-    filtered = pd.concat([filtered, crass], axis=0)
+        crass = crass.iloc[:, :5]
+        crass['database'] = ['crass'] * len(crass)
+        filtered = pd.concat([filtered, crass], axis=0)
     if os.path.getsize(f"{output}/8.blastncontigs/gpd.out") != 0:
         gpd = pd.read_table(f"{output}/8.blastncontigs/gpd.out", header=None)
         gpd.columns = ['qseqid', 'sseqid', 'pident', 'evalue', 'qcovs', 'nident', 'qlen', 'slen', 'length', 'mismatch', 'positive', 'ppos', 'gapopen', 'gaps', 'qstart', 'qend', 'sstart', 'send', 'bitscore', 'qcovhsp', 'qcovus', 'qseq', 'sstrand', 'frames']
@@ -63,9 +63,9 @@ def filter_vircontig(output):
         for i in range(len(gpd)):
             if gpd.iloc[i, 0] not in blastn:
                 blastn.append(gpd.iloc[i, 0])
-    gpd = gpd.iloc[:, :5]
-    gpd['database'] = ['gpd'] * len(gpd)
-    filtered = pd.concat([filtered, gpd], axis=0)
+        gpd = gpd.iloc[:, :5]
+        gpd['database'] = ['gpd'] * len(gpd)
+        filtered = pd.concat([filtered, gpd], axis=0)
     if os.path.getsize(f"{output}/8.blastncontigs/gvd.out") != 0:
         gvd = pd.read_table(f"{output}/8.blastncontigs/gvd.out", header=None)
         gvd.columns = ['qseqid', 'sseqid', 'pident', 'evalue', 'qcovs', 'nident', 'qlen', 'slen', 'length', 'mismatch', 'positive', 'ppos', 'gapopen', 'gaps', 'qstart', 'qend', 'sstart', 'send', 'bitscore', 'qcovhsp', 'qcovus', 'qseq', 'sstrand', 'frames']
@@ -75,9 +75,9 @@ def filter_vircontig(output):
         for i in range(len(gvd)):
             if gvd.iloc[i, 0] not in blastn:
                 blastn.append(gvd.iloc[i, 0])
-    gvd = gvd.iloc[:, :5]
-    gvd['database'] = ['gvd'] * len(gvd)
-    filtered = pd.concat([filtered, gvd], axis=0)
+        gvd = gvd.iloc[:, :5]
+        gvd['database'] = ['gvd'] * len(gvd)
+        filtered = pd.concat([filtered, gvd], axis=0)
     if os.path.getsize(f"{output}/8.blastncontigs/mgv.out") != 0:
         mgv = pd.read_table(f"{output}/8.blastncontigs/mgv.out", header=None)
         mgv.columns = ['qseqid', 'sseqid', 'pident', 'evalue', 'qcovs', 'nident', 'qlen', 'slen', 'length', 'mismatch', 'positive', 'ppos', 'gapopen', 'gaps', 'qstart', 'qend', 'sstart', 'send', 'bitscore', 'qcovhsp', 'qcovus', 'qseq', 'sstrand', 'frames']
@@ -87,9 +87,9 @@ def filter_vircontig(output):
         for i in range(len(mgv)):
             if mgv.iloc[i, 0] not in blastn:
                 blastn.append(mgv.iloc[i, 0])
-    mgv = mgv.iloc[:, :5]
-    mgv['database'] = ['mgv'] * len(mgv)
-    filtered = pd.concat([filtered, mgv], axis=0)
+        mgv = mgv.iloc[:, :5]
+        mgv['database'] = ['mgv'] * len(mgv)
+        filtered = pd.concat([filtered, mgv], axis=0)
     if os.path.getsize(f"{output}/8.blastncontigs/ncbi.out") != 0:
         ncbi = pd.read_table(f"{output}/8.blastncontigs/ncbi.out", header=None)
         ncbi.columns = ['qseqid', 'sseqid', 'pident', 'evalue', 'qcovs', 'nident', 'qlen', 'slen', 'length', 'mismatch', 'positive', 'ppos', 'gapopen', 'gaps', 'qstart', 'qend', 'sstart', 'send', 'bitscore', 'qcovhsp', 'qcovus', 'qseq', 'sstrand', 'frames']
@@ -99,9 +99,9 @@ def filter_vircontig(output):
         for i in range(len(ncbi)):
             if ncbi.iloc[i, 0] not in blastn:
                 blastn.append(ncbi.iloc[i, 0])
-    ncbi = ncbi.iloc[:, :5]
-    ncbi['database'] = ['ncbi'] * len(ncbi)
-    filtered = pd.concat([filtered, ncbi], axis=0)
+        ncbi = ncbi.iloc[:, :5]
+        ncbi['database'] = ['ncbi'] * len(ncbi)
+        filtered = pd.concat([filtered, ncbi], axis=0)
     if os.path.getsize(f"{output}/7.vircontigs/final-viral-score.tsv") != 0:
         dat = pd.read_table(f"{output}/7.vircontigs/final-viral-score.tsv", header=0)
         for i in range(len(dat)):
