@@ -4,7 +4,7 @@
 
 This pipeline can preprocess the raw data (fastq files) of VLP sequencing and find some viral contigs that are reliable with some useful software. In addition, after preprocessing, this pipeline can also estimate the abundance of eukaryotic viruses rapidly with Kraken2.
 
-## Attentions！##
+## Attentions ##
 
 In the current version, for easy usage, this pipeline only supports paired-end fastq files in the phred33 format. Additionaly, the branching function only supports fastq files with 150 reads length. If you need to adapt to other fastq files, feel free to modify the functions in the "utils.py" to avoid errors. We will soon support more other formats in the future.
 
