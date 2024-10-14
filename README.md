@@ -235,3 +235,9 @@ virsorter2: run directly with command `virsorter`
 trimmomatic: run directly with command `trimmomatic` (adapters are at "iVirP/adapters") 
 
 viromeQC: run the script "iVirP/viromeqc/viromeQC.py" with command `python iVirP/viromeqc/viromeQC.py`
+
+## Contact with us ##
+
+(1) Github Issues
+
+(2) Email: lbw22@mails.tsinghua.edu.cn
