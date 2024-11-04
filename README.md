@@ -28,6 +28,8 @@ In the current version, for easy usage, this pipeline only supports paired-end f
 
 `conda activate ivirp`
 
+`mamba install -c conda-forge mamba=1` (Temporary step used to solve the installation issue with current version of VirSorter2)
+
 ### Step 3: install some built-in software and download some databases  ###
 
 When you meet any bug in this step, please check the Internet connection and then rerun this step. If the bug is not solved or you meet any bug after finishing this step, please remove the whole directory(iVirP), download a new one from github or somewhere, and then just rerun this script.
